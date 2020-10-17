@@ -56,6 +56,7 @@ class SortedList {
 
   avg() {
 
+    /*
     if (this.items.length === 0) {
       throw new Error('EmptySortedList');
     } else {
@@ -67,7 +68,16 @@ class SortedList {
 
     }
   }
+  */
+
+    if (this.items.length === 0) {
+      throw new Error('EmptySortedList');
+    } else {
+      return this.sum() / this.items.length;
+    }
+  }
 
 }
+
 
 module.exports = SortedList;
